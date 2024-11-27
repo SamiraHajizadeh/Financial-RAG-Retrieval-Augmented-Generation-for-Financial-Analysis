@@ -8,7 +8,7 @@ from langchain.chains import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 class RAG:
-  def __init__(self, llm, embedding, text_splitter):
+  def __init__(self, llm, embedding):
     self.llm = llm
     self.embedding = embedding
     self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20) #text_splitter
@@ -16,10 +16,8 @@ class RAG:
 
   def create_vector_store(self, documents):
     all_splits = self.text_splitter.split_documents(documents)
-    print('hi')
-    #vectordb = Chroma.from_documents(documents=all_splits, embedding=self.embedding, persist_directory="chroma_db")
-    print('hi')
-    #self.retriever = vectordb.as_retriever()
+    vectordb = Chroma.from_documents(documents=all_splits, embedding=self.embedding, persist_directory="chroma_db")
+    self.retriever = vectordb.as_retriever()
 
 
   def init_chain(self, chain_type="stuff"):

@@ -4,6 +4,7 @@ Implementing RAG
 """
 
 from langchain.vectorstores import Chroma
+from langchain.chains import RetrievalQA
 
 class RAG:
   def __init__(self, llm, embedding, text_splitter):

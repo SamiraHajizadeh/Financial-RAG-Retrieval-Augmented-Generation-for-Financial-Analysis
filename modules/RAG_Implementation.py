@@ -5,18 +5,21 @@ Implementing RAG
 
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 class RAG:
   def __init__(self, llm, embedding, text_splitter):
     self.llm = llm
     self.embedding = embedding
-    self.text_splitter = text_splitter
+    self.text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20) #text_splitter
 
 
   def create_vector_store(self, documents):
     all_splits = self.text_splitter.split_documents(documents)
-    vectordb = Chroma.from_documents(documents=all_splits, embedding=self.embedding, persist_directory="chroma_db")
-    self.retriever = vectordb.as_retriever()
+    print('hi')
+    #vectordb = Chroma.from_documents(documents=all_splits, embedding=self.embedding, persist_directory="chroma_db")
+    print('hi')
+    #self.retriever = vectordb.as_retriever()
 
 
   def init_chain(self, chain_type="stuff"):
@@ -42,6 +45,3 @@ class RAG:
         self.prompts.append(output['result'][:output['result'].find('Helpful Answer:')])
         self.contexts.append(output['source_documents'])
     return self.results, self.contexts, self.prompts
-
-
-

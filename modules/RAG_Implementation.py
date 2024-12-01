@@ -17,7 +17,7 @@ class RAG:
   def create_vector_store(self, documents):
     all_splits = self.text_splitter.split_documents(documents)
     vectordb = Chroma.from_documents(documents=all_splits, embedding=self.embedding, persist_directory="chroma_db")
-    self.retriever = vectordb.as_retriever(search_type="similarity_score_threshold")
+    self.retriever = vectordb.as_retriever()
 
 
   def init_chain(self, chain_type="stuff"):

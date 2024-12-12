@@ -43,6 +43,8 @@ Afterwards, change Cell 4 in the notebook before running the code.
 
 ### Fine-tuning Qwen2.5 3B on Wealth Alpaca
 
+The Qwen 2.5 3B model was fine-tuned to perform well on financial data using the Wealth Alpaca dataset. To make the model faster and less computationally expensive we perfomed QLoRa based peft on it which resulted in a dip in performance due to quantisation but made the model lighter. Later we used this fine-tuned model in our RAG which contained both the FinQ&A and Wealth ALpca datastet. The model performed at par with the original baseline model achieving almost similar cosine similarity scores.
+
 ```bash
 git clone https://github.com/Ojaswa-Yadav/GenAI-Financial-Agent-v2.git
 cd GenAI-Financial-Agent-v2
@@ -66,9 +68,9 @@ The system was evaluated across multiple metrics using the FinQA dataset:
 Key Findings:
 - Naive RAG consistently outperformed both the baseline and fine-tuned models in answer relevance and BLEU scores.
 - Agentic RAG introduced slight performance drops but improved generalizability by handling irrelevant queries effectively.
+- Fine-tuned model based RAG performed at par with the baseline Qwen model even though its size was reduced.
 
 ---
-
 
 ## Future Work
 

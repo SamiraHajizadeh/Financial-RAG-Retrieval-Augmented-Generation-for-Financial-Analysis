@@ -50,6 +50,10 @@ Afterwards, change Cell 4 in the notebook before running the code.
 
 <img src="image.png" width="400" />
 
+### Fine-tuning Qwen2.5 3B on Wealth Alpaca
+
+Something
+
 ## Future Work
 
 - Explore advanced RAG techniques, such as dense retrieval and cross-encoders.

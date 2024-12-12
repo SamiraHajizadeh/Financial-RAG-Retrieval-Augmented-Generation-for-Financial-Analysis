@@ -6,6 +6,13 @@ Financial RAG is a project that implements Retrieval-Augmented Generation (RAG) 
 
 You can import the code to your IDE using
 
+
+Installation
+bashCopygit clone https://github.com/SamiraHajizadeh/Financial_RAG.git
+cd Financial_RAG
+pip install -r requirements.txt
+
+
 git clone https://github.com/SamiraHajizadeh/Financial_RAG.git
 cd Financial_RAG
 pip install -r requirements.txt

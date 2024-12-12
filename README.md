@@ -7,22 +7,6 @@ Financial Intelligence is an advanced Retrieval-Augmented Generation (RAG) proje
 
 ## Features
 
-
-
-## Running
-
-You can import the code to your IDE using:
-
-```bash
-git clone https://github.com/SamiraHajizadeh/Financial_RAG.git
-cd Financial_RAG
-pip install -r requirements.txt
-```
-
-Afterwards, change Cell 4 in the notebook before running the code.
-
-<img src="image.png" width="400" />
-
 # GenAI Financial Agent
 
 ## Overview
@@ -52,7 +36,19 @@ The agent supports two RAG implementations:
 
 ## Getting Started
 
-**(Instructions on how to set up the environment, train the model, and run inference will be added here.)**
+### Evaluating Retrieval-Augmented Generation (RAG) and Agentic RAG on a Financial Q&A Dataset Compared to Baseline Qwen-2.5 3B
+
+You can import the code to your IDE using:
+
+```bash
+git clone https://github.com/SamiraHajizadeh/Financial_RAG.git
+cd Financial_RAG
+pip install -r requirements.txt
+```
+
+Afterwards, change Cell 4 in the notebook before running the code.
+
+<img src="image.png" width="400" />
 
 ## Future Work
 

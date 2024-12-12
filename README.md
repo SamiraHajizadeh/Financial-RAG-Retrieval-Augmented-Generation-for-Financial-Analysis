@@ -36,7 +36,7 @@ The agent supports two RAG implementations:
 
 ## Getting Started
 
-### Evaluating Retrieval-Augmented Generation (RAG) and Agentic RAG on a Financial Q&A Dataset Compared to Baseline Qwen-2.5 3B
+### Evaluating RAG and Agentic RAG on a Financial Q&A Dataset Compared to Baseline Qwen-2.5 3B
 
 You can import the code to your IDE using:
 

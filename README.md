@@ -4,4 +4,4 @@ Financial RAG is a project that implements Retrieval-Augmented Generation (RAG) 
 
 <img src="[https://github.com/SamiraHajizadeh/Financial-RAG-Retrieval-Augmented-Generation-for-Financial-Analysis/blob/main/image.png]" width="300" />
 
-![Alt text](https://github.com/SamiraHajizadeh/Financial-RAG-Retrieval-Augmented-Generation-for-Financial-Analysis/blob/main/image.png)
+![](https://github.com/SamiraHajizadeh/Financial-RAG-Retrieval-Augmented-Generation-for-Financial-Analysis/blob/main/image.png)

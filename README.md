@@ -2,15 +2,6 @@
 
 ## Overview
 
-Financial Intelligence is an advanced Retrieval-Augmented Generation (RAG) project designed to provide intelligent, context-aware financial analysis and insights. By combining cutting-edge language models with sophisticated information retrieval techniques, this project aims to transform how investors and financial professionals access and interpret complex financial data.
-
-
-## Features
-
-# GenAI Financial Agent
-
-## Overview
-
 The GenAI Financial Agent is a conversational AI system designed to assist users with financial queries. It leverages the powerful **Qwen 2.5** language model, fine-tuned on financial datasets using **LoRA** and **4-bit quantization** for efficient resource utilization. 
 
 To enhance the accuracy and context-awareness of the generated responses, the agent integrates **Retrieval-Augmented Generation (RAG)**. This approach allows the model to access and incorporate relevant information from external knowledge sources during the generation process. 

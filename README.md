@@ -20,4 +20,5 @@ pip install -r requirements.txt
 ```
 
 Afterwards, change Cell 4 in the notebook before running the code.
+
 <img src="image.png" width="300" />

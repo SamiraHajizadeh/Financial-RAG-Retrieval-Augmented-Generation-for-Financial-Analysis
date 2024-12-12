@@ -55,8 +55,8 @@ The system was evaluated across multiple metrics using the FinQA dataset:
 | Cosine Similarity      | 0.74           | 0.70             | 0.86      | 0.79        |
 | BLEU Score             | 0.005          | 0.00             | 0.42      | 0.24        |
 | Answer Relevance       | 0.84           | -                | 0.95      | 0.95        |
-| Faithfulness           | N/A            | N/A              | 0.89      | N/A         |
-| Context Precision      | N/A            | N/A              | 0.92      | N/A         |
+| Faithfulness           | -              | -                | 0.89      | -           |
+| Context Precision      | -              | -                | 0.92      | -           |
 
 Key Findings:
 - Naive RAG consistently outperformed both the baseline and fine-tuned models in answer relevance and BLEU scores.

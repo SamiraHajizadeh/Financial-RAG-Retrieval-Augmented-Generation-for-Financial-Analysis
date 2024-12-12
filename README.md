@@ -43,7 +43,12 @@ Afterwards, change Cell 4 in the notebook before running the code.
 
 ### Fine-tuning Qwen2.5 3B on Wealth Alpaca
 
-Something
+```bash
+git clone https://github.com/Ojaswa-Yadav/GenAI-Financial-Agent-v2.git
+cd GenAI-Financial-Agent-v2
+pip install -r requirements.txt
+```
+
 
 ## Evaluation Results
 

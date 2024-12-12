@@ -45,15 +45,29 @@ Afterwards, change Cell 4 in the notebook before running the code.
 
 Something
 
+## Evaluation Results
+
+### Performance Comparison
+The system was evaluated across multiple metrics using the FinQA dataset:
+
+| Metric                 | Baseline Model | Fine-Tuned Model | Naive RAG | Agentic RAG |
+|------------------------|----------------|------------------|-----------|-------------|
+| Cosine Similarity      | 0.74           | 0.70             | 0.86      | 0.79        |
+| BLEU Score             | 0.005          | 0.00             | 0.42      | 0.24        |
+| Answer Relevance       | 0.84           | -                | 0.95      | 0.95        |
+| Faithfulness           | N/A            | N/A              | 0.89      | N/A         |
+| Context Precision      | N/A            | N/A              | 0.92      | N/A         |
+
+Key Findings:
+- Naive RAG consistently outperformed both the baseline and fine-tuned models in answer relevance and BLEU scores.
+- Agentic RAG introduced slight performance drops but improved generalizability by handling irrelevant queries effectively.
+
+---
+
+
 ## Future Work
 
-- Explore advanced RAG techniques, such as dense retrieval and cross-encoders.
-- Integrate with external financial data sources (e.g., APIs, news feeds).
-- Develop a user interface for seamless interaction with the agent.
-- Implement risk management and safety measures to ensure responsible AI usage in the financial domain.
-
-This README provides a high-level overview of the GenAI Financial Agent. For more detailed information, please refer to the project documentation and code.
-
-**Note:** This README is under development and will be updated with more specific details and instructions in the future.
-
-I hope this enhanced README file is more informative and helpful!
+1. Explore advanced RAG techniques like dense retrieval and cross-encoders.
+2. Integrate real-time financial data sources (e.g., APIs, news feeds).
+3. Develop a user-friendly interface for seamless interaction.
+4. Implement robust safety measures for responsible AI usage in finance.
